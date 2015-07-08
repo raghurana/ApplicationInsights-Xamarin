@@ -19,10 +19,6 @@ namespace AI.XamarinSDK.Abstractions
 
 		void TrackPageView (string pageName);
 
-		void TrackPageView (string pageName, int duration);
-
-		void TrackPageView (string pageName, int duration, Dictionary<string, string> properties);
-
 		void TrackManagedException (Exception  exception, bool handled);
 	}
 }

@@ -48,16 +48,6 @@ namespace AI.XamarinSDK.iOS
 			MSAITelemetryManager.TrackPageView (pageName);
 		}
 
-		public void TrackPageView (string pageName, int duration)
-		{
-			MSAITelemetryManager.TrackPageView (pageName, duration);
-		}
-
-		public void TrackPageView (string pageName, int duration, Dictionary<string, string> properties)
-		{
-			MSAITelemetryManager.TrackPageView (pageName, duration, Utils.ConvertToNSDictionary (properties));
-		}
-
 		public void TrackManagedException (Exception  exception, bool handled)
 		{
 			if (exception != null) {

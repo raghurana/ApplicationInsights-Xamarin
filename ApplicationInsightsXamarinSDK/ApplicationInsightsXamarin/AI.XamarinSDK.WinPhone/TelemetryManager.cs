@@ -40,14 +40,6 @@ namespace AI.XamarinSDK.WinPhone
 		{
 		}
 
-		public void TrackPageView (string pageName, int duration)
-		{
-		}
-
-		public void TrackPageView (string pageName, int duration, Dictionary<string, string> properties)
-		{
-		}
-
 		public void TrackManagedException (Exception  exception, bool handled)
 		{
 		}

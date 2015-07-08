@@ -80,27 +80,6 @@ namespace AI.XamarinSDK.Abstractions
 		}
 
 		/// <summary>
-		/// Tracks a page view.
-		/// </summary>
-		/// <param name="pageName">The name of the page.</param>
-		/// <param name="duration">The time the page was visible to the user</param>
-		public static void TrackPageView (string pageName, int duration)
-		{
-			DependencyService.Get<ITelemetryManager>().TrackPageView(pageName, duration);
-		}
-
-		/// <summary>
-		/// Tracks a page view.
-		/// </summary>
-		/// <param name="pageName">The name of the page.</param>
-		/// <param name="duration">The time the page was visible to the user</param>
-		/// <param name="properties">Custom properties that should be added to this page view object.</param>
-		public static void TrackPageView (string pageName, int duration, Dictionary<string, string> properties)
-		{
-			DependencyService.Get<ITelemetryManager>().TrackPageView(pageName, duration, properties);
-		}
-
-		/// <summary>
 		/// Tracks a managed handled/unhandled exception
 		/// </summary>
 		/// <param name="exception">The exception object that should be tracked</param>

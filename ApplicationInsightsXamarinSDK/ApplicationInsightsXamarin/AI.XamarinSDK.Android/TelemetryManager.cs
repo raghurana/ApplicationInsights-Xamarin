@@ -51,16 +51,6 @@ namespace AI.XamarinSDK.Android
 			TelemetryClient.Instance.TrackPageView (pageName);
 		}
 
-		public void TrackPageView (string pageName, int duration)
-		{
-			TelemetryClient.Instance.TrackPageView (pageName);
-		}
-
-		public void TrackPageView (string pageName, int duration, Dictionary<string, string> properties)
-		{
-			TelemetryClient.Instance.TrackPageView (pageName, properties);
-		}
-
 		public void TrackManagedException (Exception  exception, bool handled)
 		{
 			if (exception != null) {
