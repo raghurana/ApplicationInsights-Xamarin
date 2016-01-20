@@ -13,15 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.XamarinSDK.Abstractions"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.XamarinSDK.WinPhone", "ApplicationInsightsXamarin\AI.XamarinSDK.WinPhone\AI.XamarinSDK.WinPhone.csproj", "{CAA8B410-05A3-4F2C-89F0-031806199D19}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{D22B6B76-9EFB-4DEF-A824-126E7C61B70D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1ABF706F-4B31-4335-B8F2-220AAB651564}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. clients", "1. clients", "{D22B6B76-9EFB-4DEF-A824-126E7C61B70D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyLibrary.iOS", "DemoApp\DummyLibrary.iOS\DummyLibrary.iOS.csproj", "{CCA3EAB7-9B83-4F48-9CBF-CA3155A5969F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyLibrary.Android", "DemoApp\DummyLibrary.Android\DummyLibrary.Android.csproj", "{68E5289F-6819-4757-812B-6D7AAF78FD7B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{B1E3C2E4-4E49-4213-A403-56A72B4953CB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. libs", "0. libs", "{B1E3C2E4-4E49-4213-A403-56A72B4953CB}"
 	ProjectSection(SolutionItems) = preProject
 		libs\System.Collections.dll = libs\System.Collections.dll
 		libs\System.Runtime.dll = libs\System.Runtime.dll
