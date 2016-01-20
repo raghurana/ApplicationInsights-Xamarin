@@ -3,11 +3,8 @@ using UIKit;
 using ObjCRuntime;
 using Foundation;
 using System.Collections.Generic;
-using Xamarin.Forms;
 using System.Runtime.InteropServices;
 using AI.XamarinSDK.Abstractions;
-
-[assembly: Xamarin.Forms.Dependency (typeof (AI.XamarinSDK.iOS.ApplicationInsights))]
 
 namespace AI.XamarinSDK.iOS
 {

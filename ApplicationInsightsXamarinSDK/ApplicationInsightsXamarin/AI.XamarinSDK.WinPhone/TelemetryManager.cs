@@ -9,7 +9,6 @@ namespace AI.XamarinSDK.WinPhone
 
 	public class TelemetryManager : ITelemetryManager
 	{
-
 		public TelemetryManager(){}
 
 		public void TrackEvent (string eventName)

@@ -7,16 +7,20 @@ namespace AI.XamarinSDK.Abstractions
 	/// </summary>
 	public class ApplicationInsights
 	{
+        private static IApplicationInsights target; // = Xamarin.Forms.DependencyService.Get<IApplicationInsights> ();
 
-		private static readonly IApplicationInsights target = Xamarin.Forms.DependencyService.Get<IApplicationInsights> ();
+        private ApplicationInsights() { }
 
-		private ApplicationInsights() {}
+        public static void Init(IApplicationInsights platform)
+        {
+            target = platform;
+        }
 
-		/// <summary>
-		/// Setup the SDK with the instrumentation key of your app.
-		/// </summary>
-		/// <param name="instrumentationKey">The instrumentation key of your app.</param>
-		public static void Setup (string instrumentationKey)
+        /// <summary>
+        /// Setup the SDK with the instrumentation key of your app.
+        /// </summary>
+        /// <param name="instrumentationKey">The instrumentation key of your app.</param>
+        public static void Setup (string instrumentationKey)
 		{
 			target.Setup (instrumentationKey);
 		}

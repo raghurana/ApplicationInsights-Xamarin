@@ -1,9 +1,5 @@
-﻿using System;
-using Com.Microsoft.AI.Xamarinexample;
-using Xamarin.Forms;
-using Android.App;
+﻿using Android.App;
 
-[assembly: Xamarin.Forms.Dependency (typeof (XamarinTest.Droid.DummyLibraryAndroid))]
 
 namespace XamarinTest.Droid
 {

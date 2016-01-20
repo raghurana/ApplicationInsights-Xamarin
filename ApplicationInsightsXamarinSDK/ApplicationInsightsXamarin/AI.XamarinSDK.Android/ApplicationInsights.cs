@@ -1,12 +1,8 @@
 ﻿using System;
-using Android;
 using Android.Runtime;
 using Android.App;
-using Android.Content;
-using Xamarin.Forms;
 using AI.XamarinSDK.Abstractions;
 
-[assembly: Xamarin.Forms.Dependency (typeof (AI.XamarinSDK.Android.ApplicationInsights))]
 namespace AI.XamarinSDK.Android
 {
 	[Preserve(AllMembers=true)]
@@ -16,12 +12,15 @@ namespace AI.XamarinSDK.Android
 
 		public ApplicationInsights (){}
 
-		public void Setup(string instrumentationKey)
-		{
-			Com.Microsoft.Applicationinsights.Library.ApplicationInsights.Setup (((Activity)Forms.Context).Application, ((Activity)Forms.Context).Application, instrumentationKey);
-		}
+	    public void Setup(string instrumentationKey)
+	    {
+	        Com.Microsoft
+	            .Applicationinsights
+	            .Library.ApplicationInsights
+	            .Setup(Application.Context, (Application) Application.Context, instrumentationKey);
+	    }
 
-		public void Start ()
+	    public void Start ()
 		{
 			registerUnhandledExceptionHandler ();
 			Com.Microsoft.Applicationinsights.Library.ApplicationInsights.Start ();
